@@ -1,0 +1,122 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 6, 2016, 4:04:58 PM
+    Author     : Britain
+*/
+
+#single-descriptor{
+    position: fixed;
+    top: 10px;
+    right: 1650px;
+}
+
+#set1 {
+    position: fixed;
+    top: 60px;
+    height: 300px;
+    width: 438px;
+    right: 1430px;
+}
+
+#set2{
+    position: fixed;
+    top: 360px;
+    height: 100px;
+    width: 438px;
+    right: 1430px;
+}
+
+#all-descriptor{
+    position: fixed;
+    top: 450px;
+    right: 1690px;
+}
+
+#set3{
+    position: fixed;
+    top: 490px;
+    height: 300px;
+    width: 438px;
+    right: 1430px;
+}
+
+#set4{
+    position: fixed;
+    top: 790px;
+    height: 100px;
+    width: 219px;
+    right: 1649px;
+}
+
+
+body,
+html {
+    
+    margin:0;
+    padding:0;
+    color:#000;
+    background: url(http://www.utb.edu/vpaa/cla/gov/PublishingImages/GovernmentNEW_2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#myCanvas1
+{
+    position: fixed;
+    top: 60px;
+    left: 1430px;
+   
+}
+
+
+
+#wrap {
+    width:900px;
+    margin:0 auto;
+    background:#cc9;
+}
+#Mast {
+    margin: auto;
+    padding:5px 10px;
+    background:#C0C0C0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.container {
+}
+
+#about{
+    font-size: large;
+	font-weight: bolder;
+}
+
+#videoTitle{
+        font-size: x-large;
+	font-weight: bolder;
+         text-align: center;
+}
+
+#Resources{
+    font-size: large;
+	font-weight: bolder;
+}
+
+.subhead {
+        text-align: center;
+	font-size: large;
+	font-weight: bolder;
+}
+#heading {
+	font-size:36px;
+	font-weight:bolder;
+}

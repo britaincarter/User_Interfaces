@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>$1 Recognizer</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="canvas.text.js"></script>
+        <script type="text/javascript" src="./jquery-1.7.2.min.js"></script>     
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="initial.js"></script>
+
+    </head>
+    <body onload="onLoadEvent()">
+
+        <div id="wrap">
+            <div id="Mast">
+                <p id="heading">Gesture Controlled Multiple Video Player</p>
+                <!--<img style="" src="$1.png" width="280" /><!-->
+
+                <p style="font-size:8pt"><sup>&dagger;</sup>HW_3</p>
+            </div>
+            
+            <p id="single-descriptor"><strong>Commands for Selected Videos:</strong></p>
+            <img src="https://s22.postimg.org/pd9vvzskx/Set1.png" id="set1">
+                
+            </img>
+            <img src="https://s13.postimg.org/3qda6c17r/Set2.png" id="set2">
+                
+            </img>
+            <p id="all-descriptor"><strong>Commands for All Videos:</strong></p>
+            <img src="https://s22.postimg.org/e0m605y1d/Set3.png" id="set3">
+            </img>
+            
+            <img src="https://s18.postimg.org/4dje6pwjd/Set4.png" id="set4">
+                
+            </img>
+            
+            <p id="about">About</p>
+            <p>
+                This website allows you can to control multiple videos through simple mouse gestures. Try it on the canvas to the right! 
+            </p>
+
+            <p class="subhead">Demo</p>
+            <p>
+                In the square to the right, you can draw the commands to manipulate videos which are located in the column to the left. New and confused? Read the Quick Guide below to help get started!   
+                
+                <!-- Gesture image and canvas -->
+                <table border="0" cellspacing="10">
+                    <tr>
+                        <td valign="top">
+                            <!--<img src="unistrokes.gif"><br/><!-->
+
+                            <p>
+
+                                <form style="font-size:10pt">
+                                    <input type="hidden" name="search" id="useGSS" checked>
+                                        <span style="font-weight:bold"></span>
+                                    </input><br />
+                                    <input type="hidden" name="search" id="useProtractor">
+                                        <span style="font-weight:bold"></span>
+                                    </input>
+                                </form>
+
+
+                            </p>
+                            
+                            <div id="instructions">
+                                
+                            </div>
+                            
+                        </td>
+                        <td valign="top" align="left">
+                            <div id ="myCanvas1">
+                                <p style="margin-bottom:4pt;font-size:10pt"><i>Make strokes on this canvas by clicking and holding your left mouse button.</i>
+                                </p>
+
+                                <canvas id="myCanvas" width="420" height="400" style="background-color:#dddddd"
+                                        onmousedown="mouseDownEvent(event.clientX, event.clientY)"
+                                        onmousemove="mouseMoveEvent(event.clientX, event.clientY)"
+                                        onmouseup="mouseUpEvent(event.clientX, event.clientY)"
+                                        oncontextmenu="return false;">
+                                    <span style="background-color:#ffff88;">The &lt;canvas&gt; element is not supported by this browser.</span>
+                                </canvas>
+                            </div>
+                            <div id="videoSelection">
+                                
+                            </div>
+
+                            <!-- Editing area below stroking canvas area -->
+                            <table>
+
+                            </table>
+                            <!-- End of editing area below stroking canvas area -->
+                        </td>
+                    </tr>
+                </table>
+            </p>
+
+
+            <p id="videoTitle">Videos</p>
+
+            <div id ="videos">
+
+            </div>
+
+            <p id="Resources">Quick Guide</p>
+
+            <ol>
+                    <li>To manipulate a video there must be a video to manipulate. Try adding a video! (Draw the command on the canvas named "Create New Video")</li>
+                    <li>To manipulate specific videos use the select gesture in the canvas, then click on the videos you want to select!</li>
+                    <li>Now you can manipulate a specific videos attributes by using the gestures on the canvas!</li>
+                    <li>Done manipulating a specific video? You can de-select a video by using the select gesture and clicking on the videos you want to de-select!</li>
+                    <li>If you want to manipulate all the videos at once use a command for all videos.</li>
+                    <li>You have all the tools you need. Good luck and have fun!</li>
+                </ol>
+            <br/>
+            <p style="font-size:8pt;text-align:center">Copyright Britain Carter; bic2106</p>
+            <br/>
+        </div>
+    </body>
+</html>
